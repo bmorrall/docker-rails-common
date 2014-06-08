@@ -1,7 +1,7 @@
 # Dockerfile for a Rails application using Nginx and Unicorn
 
 # Select ubuntu as the base image
-FROM dockerfile/nginx
+FROM dockerfile/ubuntu
 MAINTAINER Ben Morrall <bemo56@hotmail.com>
 
 # Install Ruby
@@ -28,5 +28,3 @@ RUN mkdir /apps
 RUN chown -R rails:rails \
   /apps \
   /usr/local/
-
-COMMAND ["nginx"]
